@@ -19,19 +19,7 @@ public class Cube : MonoBehaviour
     
     int submeshCount = 1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        CreateCube();
-    }
-
-    //Method for getting cube size from triangle size
-    public Vector3 CubeSize()
-    {
-        return triangleSize * 2;
-    }
-
-    private void CreateCube()
+    public void CreateCube(int material)
     {
         MeshFilter meshFilter = this.GetComponent<MeshFilter>();
 
@@ -82,8 +70,12 @@ public class Cube : MonoBehaviour
 
         MaterialsBuilder materialsBuilder = new MaterialsBuilder();
 
-        List<Material> materialsList = materialsBuilder.MaterialsList();
+        meshRenderer.material = materialsBuilder.MaterialsList().ToArray()[material]; // By default set material to grey
+    }
 
-        meshRenderer.materials[0] = materialsList.ToArray()[0];
+    // Method for getting cube size from triangle size
+    public Vector3 CubeSize()
+    {
+        return triangleSize * 2;
     }
 }
