@@ -29,8 +29,8 @@ public class MaterialsBuilder : MonoBehaviour
         Material whiteMaterial = new Material(Shader.Find("Specular"));
         whiteMaterial.color = Color.white;
 
-        Material clearMaterial = new Material(Shader.Find("Specular"));
-        clearMaterial.color = Color.clear;
+        Material blackMaterial = new Material(Shader.Find("Specular"));
+        blackMaterial.color = Color.black;
 
         materialsList.Add(greyMaterial);
         materialsList.Add(redMaterial);
@@ -39,7 +39,7 @@ public class MaterialsBuilder : MonoBehaviour
         materialsList.Add(yellowMaterial);
         materialsList.Add(magentaMaterial);
         materialsList.Add(whiteMaterial);
-        materialsList.Add(clearMaterial);
+        materialsList.Add(blackMaterial);
     }
 
     public List<Material> MaterialsList()
