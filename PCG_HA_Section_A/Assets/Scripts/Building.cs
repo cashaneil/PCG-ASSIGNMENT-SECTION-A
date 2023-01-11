@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    public void CreateBuilding(int buildingIdx, Vector3 size, Vector3 position, int material)
+    public GameObject CreateBuilding(int index, Vector3 size, Vector3 position, int material)
     {
         GameObject building = new GameObject();
-        building.name = "Building " + buildingIdx; // giving building an index so that it can be uniquely identified
-        building.transform.parent = GameObject.Find("City").transform;
+        building.name = "Building " + index; // giving building an index so that it can be uniquely identified
         building.AddComponent<Cube>();
         building.GetComponent<Cube>().CreateCube(material);
 
@@ -16,5 +15,7 @@ public class Building : MonoBehaviour
         building.transform.localScale = size;
         // Setting position
         building.transform.position = position;
+
+        return building;
     }
 }
