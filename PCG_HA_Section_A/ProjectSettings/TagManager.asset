@@ -7,6 +7,8 @@ TagManager:
   - Obs
   - Crash
   - Car
+  - Building
+  - Road
   layers:
   - Default
   - TransparentFX

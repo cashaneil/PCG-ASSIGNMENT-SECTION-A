@@ -8,6 +8,7 @@ public class Building : MonoBehaviour
     {
         GameObject building = new GameObject();
         building.name = "Building " + index; // giving building an index so that it can be uniquely identified
+        building.tag = "Building";
         building.AddComponent<Cube>();
         building.GetComponent<Cube>().CreateCube(material);
 

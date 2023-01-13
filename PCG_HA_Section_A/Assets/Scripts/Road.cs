@@ -8,6 +8,7 @@ public class Road : MonoBehaviour
     {
         GameObject road = new GameObject();
         road.name = "Road " + index; // giving road an index so that it can be uniquely identified
+        road.tag = "Road";
         road.AddComponent<Cube>();
         road.GetComponent<Cube>().CreateCube(7);
 
