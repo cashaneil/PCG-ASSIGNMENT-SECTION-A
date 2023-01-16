@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 328335859}
   - component: {fileID: 328335858}
   - component: {fileID: 328335861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,6 +239,24 @@ MonoBehaviour:
     maxHeight: 1
   addTerrainTexture: 1
   terrainTextureBlendOffset: 0.01
+  treeData:
+  - treeMesh: {fileID: 114418, guid: be878d9ea17907f4a8068678a5ce7908, type: 3}
+    minHeight: 0.4
+    maxHeight: 0.6
+  - treeMesh: {fileID: 114418, guid: 8b2d47fdc2e25ac4f9721480a68bbefa, type: 3}
+    minHeight: 0.6
+    maxHeight: 0.7
+  - treeMesh: {fileID: 114418, guid: 9b8fc966f95ea9c4194dc091fc40b478, type: 3}
+    minHeight: 0.7
+    maxHeight: 0.8
+  maxTrees: 10000
+  treeSpacing: 10
+  addTrees: 1
+  terrainLayerIndex: 7
+  water: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+  waterHeight: 0.35
+  rain: {fileID: 160098, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
+  rainHeight: 0.9
 --- !u!1 &1813531218
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,8 +427,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817652979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.07188815, y: 0.033204712, z: -0.0024763676, w: -0.99685675}
+  m_LocalPosition: {x: 487.6728, y: 359.79605, z: 77.708984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
