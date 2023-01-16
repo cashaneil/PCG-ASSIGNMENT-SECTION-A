@@ -114,10 +114,13 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CROSS_PLATFORM_INPUT
+-define:STARTER_ASSETS_PACKAGES_CHECKED
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/StarterAssets/Editor/PackageChecker/StarterAssetsPackageChecker.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -338,6 +341,9 @@
 -r:"D:/PCGASSIGNMENT/PCG-ASSIGNMENT-SECTION-A/PCG_HA_Section_A/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"D:/PCGASSIGNMENT/PCG-ASSIGNMENT-SECTION-A/PCG_HA_Section_A/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
@@ -363,6 +369,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Car Controller/Editor/PrometeoEditor.cs"
 "Assets/RainMaker/Editor/RainMakerEditor.cs"
+"Assets/StarterAssets/Editor/FirstPersonStarterAssetsDeployMenu.cs"
+"Assets/StarterAssets/Editor/StarterAssetsDeployMenu.cs"
+"Assets/StarterAssets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
 "Assets/Unity Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
 "Assets/Unity Standard Assets/Editor/Water/Water4/GerstnerDisplaceEditor.cs"
 "Assets/Unity Standard Assets/Editor/Water/Water4/PlanarReflectionEditor.cs"
